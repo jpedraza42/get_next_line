@@ -1,10 +1,10 @@
-*This project has been created as part of the 42 curriculum by jpedraza.*
+*This project has been created as part of the 42 Málaga Fundación Telefónica curriculum by jpedraza.*
 
 # get_next_line
 
 ## Description
 
-**get_next_line** is a 42 curriculum project whose goal is to implement a function capable of reading a file line by line using only low-level system calls and manual dynamic memory management.
+**get_next_line** is a 42 Málaga Fundación Telefónica curriculum project whose goal is to implement a function capable of reading a file line by line using only low-level system calls and manual dynamic memory management.
 
 The implemented function:
 
