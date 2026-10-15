@@ -1,0 +1,14 @@
+name: C compilation smoke check
+on:
+  push:
+  pull_request:
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        buffer_size: [1, 42, 1024]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile source files
+        run: cc -Wall -Wextra -Werror -D BUFFER_SIZE=${{ matrix.buffer_size }} -c get_next_line.c get_next_line_utils.c
